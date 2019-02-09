@@ -40,7 +40,7 @@ public class Author {
     @JoinTable(
             name = "Author_Category",
             joinColumns = { @JoinColumn(name = "Author_id") },
-            inverseJoinColumns = { @JoinColumn(name = "Category_name") }
+            inverseJoinColumns = { @JoinColumn(name = "Category_id") }
     )
     private List<Category> categoryList;
 
