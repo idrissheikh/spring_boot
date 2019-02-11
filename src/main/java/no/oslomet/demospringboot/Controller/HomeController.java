@@ -37,6 +37,8 @@ public class HomeController {
         Book book = new Book();
         model.addAttribute("book", book);
         return "index";
+
+
     }
 
     @PostMapping("/saveBook")
